@@ -1,0 +1,39 @@
+{
+  "name": "@dooubletap/Whitelister",
+  "version": "1.5.0",
+  "description": "Bot to provide forms for whitelisting. Usefull for game servers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DooubleTap/Whitelister.git"
+  },
+  "keywords": [
+    "bot",
+    "discord"
+  ],
+  "author": "DooubleTap",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "chalk": "^2.4.2",
+    "discord-rpc": "^4.0.1",
+    "discord.js": "^14.16.2",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.10",
+    "express": "^4.21.0",
+    "express-session": "^1.18.0",
+    "irc": "^0.5.2",
+    "moment": "^2.29.4",
+    "mongoose": "^7.8.1",
+    "openai": "^3.2.1",
+    "passport": "^0.7.0",
+    "passport-discord": "^0.1.4"
+  },
+  "bugs": {
+    "url": "https://github.com/DooubleTap/Whitelister/issues"
+  },
+  "homepage": "https://github.com/DooubleTap/Whitelister#readme"
+}
