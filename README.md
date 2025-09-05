@@ -14,7 +14,7 @@ Here is a guide to install this bot.
 3. Then edit the .env file with all the keys and id's required. 
 4. Edit the config.json file. 
 !! DO NOT COPY PASTE THIS BELOW. JUST EDIT THE FILE ITSELF !!
-**{
+   `{
     "appID": "",   --This is from the discord developer page
     "clientId": "",  --This is from the discord developer page
     "channelGreet": "",                                       
@@ -22,7 +22,7 @@ Here is a guide to install this bot.
     "citoyen": "",   --This is the whitelist role id when they pass.
     "immigrant": "", --This is the default role that users receive when they join your guild
 
-}**
+}`
 
 5. open `/Events/interactions/interactionCreate.js` and Edit everything you want.
 6. Then, open every file, from top to bottom and adjust this the way you want. Everything is there and commented. There is a few lines where you need to put roles and channels id.
