@@ -14,18 +14,19 @@ Here is a guide to install this bot.
 3. Then edit the .env file with all the keys and id's required. 
 4. Edit the config.json file. 
 !! DO NOT COPY PASTE THIS BELOW. JUST EDIT THE FILE ITSELF !!
-   `{
+```
+{
     "appID": "",   --This is from the discord developer page
     "clientId": "",  --This is from the discord developer page
-    "channelGreet": "",                                       
+    "channelGreet": "", This channel is where you say hello to the new users joining your discord. Make sure to disable the default discord stuff in your guild settings                      
     "colorEmbed": "#228B22",                                             
-    "citoyen": "",   --This is the whitelist role id when they pass.
-    "immigrant": "", --This is the default role that users receive when they join your guild
-
-}`
-
+    "whitelisted": "",   --This is the whitelist role id when they pass.
+    "newuser": "", --This is the default role that users receive when they join your guild
+}
+```
 5. open `/Events/interactions/interactionCreate.js` and Edit everything you want.
-6. Then, open every file, from top to bottom and adjust this the way you want. Everything is there and commented. There is a few lines where you need to put roles and channels id.
+6. open `/SlashCommands/Douanes/setupFormulaire.js` This is where your form button and instruction will be sent. use the command `/setupformulaire` in the channel where you want this to go.
+7. Then, open every file, from top to bottom and adjust this the way you want. Everything is there and commented. There is a few lines where you need to put roles and channels id.
 
 I am working on a new version of this bot to make it less personal. I never planned to share that bot with anyone, this is why a lot of the files need editing. The next version will have everything needed in the config file.
 
