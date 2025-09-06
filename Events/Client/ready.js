@@ -1,33 +1,39 @@
 const { ActivityType } = require('discord.js');
+const config = require('../../config.json');
+const { t } = require('../../handlers/locale');
 
 module.exports = {
   name: "ready",
-  run: async (c) => {
-    console.log(`⌛ ${c.user.tag} démarre...`);
-    console.log(`💚 ${c.user.tag} a démarré!`);
-    c.user.setActivity({
-      name: "Bon RP!",
+  run: async (client) => {
+    // Bot startup logs
+    console.log(`⌛ ${client.user.tag} ${t('ready_starting')}...`);
+    console.log(`💚 ${client.user.tag} ${t('ready_started')}!`);
+
+    // Set bot activity
+    client.user.setActivity({
+      name: t('ready_bot_activity'),
       type: ActivityType.Custom,
     });
 
-    c.on('guildMemberAdd', async member => {
+    // Listen for new members joining
+    client.on('guildMemberAdd', async (member) => {
       try {
-        // Role a remettre au nouveau membres qui arrive sur le discord
-        await member.roles.add("1111111111111111111");
-        console.log('Role Ajouté: ' + member.id);
-        // Le Channel ID du canal qui dit bonjour a tout les joueurs qui rejoin
-        const channelGreet = c.channels.cache.get("1111111111111111111");
+        // Add default role
+        await member.roles.add(config.roles.newUser);
+        console.log(`${t('ready_role_added')}: ${member.id}`);
+
+        // Send greeting in configured channel
+        const channelGreet = client.channels.cache.get(config.channels.greet);
         if (channelGreet) {
-          // Vous poouvez edit le message ici bas.
-          channelGreet.send(`On dit bonjour a ${member}!`);
+          channelGreet.send(
+            t('ready_greet_message', { member: member })
+          );
         } else {
-          console.error("Channel not found");
+          console.error(t('ready_channel_not_found'));
         }
       } catch (error) {
-        console.error('Error adding role or sending greeting message: ', error); 
+        console.error(t('ready_error_adding_role'), error);
       }
     });
-
-    
   },
 };

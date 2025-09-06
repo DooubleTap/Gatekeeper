@@ -1,8 +1,19 @@
 {
-    "appID": "",   
-    "clientId": "",                 
-    "channelGreet": "",                                       
-    "colorEmbed": "#228B22",                                             
-    "whitelisted": "",                       
-    "newuser": ""    
-}
+    "defaultLocale": "fr",
+    "appID": "",
+    "clientId": "",
+    "colorEmbed": "#000000",
+  
+    "roles": {
+      "whitelisted": "",
+      "newUser": "",
+      "pending": ""
+    },
+  
+    "channels": {
+      "applications": "",
+      "passed": "",
+      "voiceRequest": ""
+    }
+  }
+  
