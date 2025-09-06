@@ -1,25 +1,24 @@
 require("dotenv").config();
 const { Client, GatewayIntentBits, Collection } = require("discord.js");
 const chalk = require("chalk");
-const setupAIHelper = require('./src/ai-helper');
 
 // Create the Discord client (bot)
 const client = new Client({
   intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMembers],
 });
 
-// Load your commands and events
-require("./slash"); // Assuming this loads your slash commands
-
 // Initialize command collection
 client.commands = new Collection();
+
+// Load your commands and events
+require("./slash"); // Assuming this loads your slash commands
 
 // Load events and slash commands from handlers
 ["events", "Slash"].forEach((handler) => {
   require(`./handlers/${handler}`)(client);
 });
 
-// Global error handling for unhandled rejections and exceptions
+// Global error handling
 process.on("unhandledRejection", (reason, promise) => {
   console.error(chalk.red("Unhandled Rejection at:"), promise);
   console.error(chalk.red("Reason:"), reason.stack || reason);
@@ -29,16 +28,17 @@ process.on("uncaughtException", (error) => {
   console.error(chalk.red("Uncaught Exception thrown:"), error.stack || error);
 });
 
-// Event listener for bot ready
-client.on("ready", () => {
-  console.log(chalk.green(`Logged in as ${client.user.tag}!`));
-  setupAIHelper
-
-  // Start the dashboard after the bot is ready
-  const startDashboard = require('./dashboard');
-  startDashboard(client);   // Now pass the client to the dashboard after it is initialized
-  
+// Filter DeprecationWarnings for 'ready' event (clean GitHub)
+process.on("warning", (warning) => {
+  if (
+    warning.name === "DeprecationWarning" &&
+    warning.message.includes("The ready event has been renamed to clientReady")
+  ) return;
+  console.warn(warning.name, warning.message);
 });
+
+// Event listener for bot ready is now handled in ./events/ready.js
+// So no need for client.on('ready') here
 
 // Event listener for interaction creation (slash commands)
 client.on("interactionCreate", async (interaction) => {
@@ -61,8 +61,3 @@ client.on("interactionCreate", async (interaction) => {
 
 // Log in to Discord
 client.login(process.env.TOKEN);
-
-
-
-
-
