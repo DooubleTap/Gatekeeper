@@ -1,5 +1,5 @@
 {
-  "name": "@dooubletap/Whitelister",
+  "name": "@dooubletap/Gatekeeper",
   "version": "1.5.0",
   "description": "Bot to provide forms for whitelisting. Usefull for game servers",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DooubleTap/Whitelister.git"
+    "url": "git+https://github.com/DooubleTap/Gatekeeper.git"
   },
   "keywords": [
     "bot",
@@ -22,7 +22,7 @@
   "chalk": "^2.4.2"
  },
   "bugs": {
-    "url": "https://github.com/DooubleTap/Whitelister/issues"
+    "url": "https://github.com/DooubleTap/Gatekeeper/issues"
   },
-  "homepage": "https://github.com/DooubleTap/Whitelister#readme"
+  "homepage": "https://github.com/DooubleTap/Gatekeeper#readme"
 }
