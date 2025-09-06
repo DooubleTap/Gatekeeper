@@ -20,12 +20,16 @@ Assurez-vous d'abord d'avoir installé ceci sur votre PC ou serveur!
 
 ## Installation
 1. Téléchargez le bot depuis ici.
-2. Rendez-vous sur [https://discord.com/developers/applications](https://discord.com/developers/applications) et configurez votre bot.
-3. Dans votre application, allez dans **Installation**, décochez `User Install`. Dans **Paramètres d'installation par défaut**, les scopes sont `application.commands` et `bot` (Récupérez le lien d'installation et collez-le dans votre Discord) <img width="1398" height="810" alt="image" src="https://github.com/user-attachments/assets/2c09b989-db41-487d-a7cc-86df649eae0f" />
-4. Dans **OAuth2**, ajoutez cette redirection : `http://localhost:8080/callback` et sauvegardez <img width="1424" height="233" alt="image" src="https://github.com/user-attachments/assets/f4290ef8-f3ed-475b-9382-eb8b6cbf9964" />
-5. Dans **Bot**, configurez-le ainsi <img width="1407" height="709" alt="image" src="https://github.com/user-attachments/assets/a0ef9767-6368-4be6-b6e7-65d512f76091" />
-6. Ensuite, éditez le fichier `.env.example` avec toutes les clés et IDs requis, puis renommez-le en : `.env`
-7. Éditez le fichier `config.json`.
+2. Make sure you use discord.js 14
+```
+    npm install discord.js@14
+```
+3. Rendez-vous sur [https://discord.com/developers/applications](https://discord.com/developers/applications) et configurez votre bot.
+4. Dans votre application, allez dans **Installation**, décochez `User Install`. Dans **Paramètres d'installation par défaut**, les scopes sont `application.commands` et `bot` (Récupérez le lien d'installation et collez-le dans votre Discord) <img width="1398" height="810" alt="image" src="https://github.com/user-attachments/assets/2c09b989-db41-487d-a7cc-86df649eae0f" />
+5. Dans **OAuth2**, ajoutez cette redirection : `http://localhost:8080/callback` et sauvegardez <img width="1424" height="233" alt="image" src="https://github.com/user-attachments/assets/f4290ef8-f3ed-475b-9382-eb8b6cbf9964" />
+6. Dans **Bot**, configurez-le ainsi <img width="1407" height="709" alt="image" src="https://github.com/user-attachments/assets/a0ef9767-6368-4be6-b6e7-65d512f76091" />
+7. Ensuite, éditez le fichier `.env.example` avec toutes les clés et IDs requis, puis renommez-le en : `.env`
+8. Éditez le fichier `config.json`.
 
 Captures d’écran :  
 
