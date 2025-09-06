@@ -20,12 +20,16 @@ Make sure you have this installed on your pc or server first.
 
 ## Installation
 1. Download the bot from here.
-2. Go on [https://discord.com/developers/applications](https://discord.com/developers/applications) and setup your bot there.
-3. In your application, go to **Installation**, uncheck `User Install`. In **Default Install Settings**, scopes are `application.commands` and `bot` (Grab the Install Link and paste it in your discord) <img width="1398" height="810" alt="image" src="https://github.com/user-attachments/assets/2c09b989-db41-487d-a7cc-86df649eae0f" />
-4. In **OAuth2** add this redirect: `http://localhost:8080/callback` and save <img width="1424" height="233" alt="image" src="https://github.com/user-attachments/assets/f4290ef8-f3ed-475b-9382-eb8b6cbf9964" />
-5. In **Bot** make is like this <img width="1407" height="709" alt="image" src="https://github.com/user-attachments/assets/a0ef9767-6368-4be6-b6e7-65d512f76091" />
-6. Then edit the .env.example file with all the keys and ids required, then rename it to: .env
-7. Edit the config.json file. 
+2. Make sure you use discord.js 14
+```
+    npm install discord.js@14
+```
+3. Go on [https://discord.com/developers/applications](https://discord.com/developers/applications) and setup your bot there.
+4. In your application, go to **Installation**, uncheck `User Install`. In **Default Install Settings**, scopes are `application.commands` and `bot` (Grab the Install Link and paste it in your discord) <img width="1398" height="810" alt="image" src="https://github.com/user-attachments/assets/2c09b989-db41-487d-a7cc-86df649eae0f" />
+5. In **OAuth2** add this redirect: `http://localhost:8080/callback` and save <img width="1424" height="233" alt="image" src="https://github.com/user-attachments/assets/f4290ef8-f3ed-475b-9382-eb8b6cbf9964" />
+6. In **Bot** make is like this <img width="1407" height="709" alt="image" src="https://github.com/user-attachments/assets/a0ef9767-6368-4be6-b6e7-65d512f76091" />
+7. Then edit the .env.example file with all the keys and ids required, then rename it to: .env
+8. Edit the config.json file. 
 
 Screenshots: 
 (Sorry, our community is french, so everything is french)
