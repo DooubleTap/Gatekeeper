@@ -1,37 +1,31 @@
 # Whitelister
 Discord.js 14 bot made to handle whitelisting to a server with a form.
 
-I was using a website like Gather.sh to handle whitelisting of players on my discord server. It was really useful, because we are a strict roleplay server on Fivem and we like to validate players coming in the community with a small resumé of their experience on other servers. 
-
-I figured that using a website, for something that could be done directly in discord would be so much better and would reduce the usage of 3rd party software that is often not free. 
+I was using a website like Gather.sh to handle whitelisting of players on my discord server. It was really useful, because we are a strict roleplay server on Fivem and we like to validate players coming in the community with a small resumé of their experience on other servers. Then Gather.sh stopped being supported, was getting ultra laggy and sometimes just broken.. I figured that using a website, for something that could be done directly in discord would be so much better and would reduce the usage of 3rd party software that is often not free. 
 
 This bot, can be started from your own pc, or from a windows/linux VPS or Dedi. (Usually people with FiveM servers will have a server hosted somewhere, i suggest a OVH Game-1 or 2 Dedi as it comes with a Mitigation that is pretty amazing (anti-ddos))
 
 Here is a guide to install this bot. 
 
+Make sure you have this installed on your pc or server first. 
+
+## Prerequisites
+
+1. **Node.js** installed (v18+ recommended): [https://nodejs.org/](https://nodejs.org/)
+2. **Git** (optional if cloning from GitHub): [https://git-scm.com/](https://git-scm.com/)
+3. **VSCode** (to edit and run the bot): [https://code.visualstudio.com/](https://code.visualstudio.com/)
+4. A Discord account with admin access to your server.
+5. If i may suggest, setup a second windows account and run your bot there. This way your VSCode will not become annoying to use. 
+> This will make it that you need to start your bot everytime the windows instance reboots.
+
+## Installation
 1. Download the bot from here.
 2. Go on [https://discord.com/developers/applications](https://discord.com/developers/applications) and setup your bot there.
 3. In your application, go to **Installation**, uncheck `User Install`. In **Default Install Settings**, scopes are `application.commands` and `bot` (Grab the Install Link and paste it in your discord) <img width="1398" height="810" alt="image" src="https://github.com/user-attachments/assets/2c09b989-db41-487d-a7cc-86df649eae0f" />
 4. In **OAuth2** add this redirect: `http://localhost:8080/callback` and save <img width="1424" height="233" alt="image" src="https://github.com/user-attachments/assets/f4290ef8-f3ed-475b-9382-eb8b6cbf9964" />
 5. In **Bot** make is like this <img width="1407" height="709" alt="image" src="https://github.com/user-attachments/assets/a0ef9767-6368-4be6-b6e7-65d512f76091" />
-6. Then edit the .env file with all the keys and id's required. 
+6. Then edit the .env.example file with all the keys and ids required, then rename it to: .env
 7. Edit the config.json file. 
-!! DO NOT COPY PASTE THIS BELOW. JUST EDIT THE FILE ITSELF !!
-```
-{
-    "appID": "",   --This is from the discord developer page
-    "clientId": "",  --This is from the discord developer page
-    "channelGreet": "", This channel is where you say hello to the new users joining your discord. Make sure to disable the default discord stuff in your guild settings                      
-    "colorEmbed": "#228B22",                                             
-    "whitelisted": "",   --This is the whitelist role id when they pass.
-    "newuser": "", --This is the default role that users receive when they join your guild
-}
-```
-8. open `/Events/interactions/interactionCreate.js` and Edit everything you want.
-9. open `/SlashCommands/Douanes/setupFormulaire.js` This is where your form button and instruction will be sent. use the command `/setupformulaire` in the channel where you want this to go.
-10. Then, open every file, from top to bottom and adjust this the way you want. Everything is there and commented. There is a few lines where you need to put roles and channels id.
-
-I am working on a new version of this bot to make it less personal. I never planned to share that bot with anyone, this is why a lot of the files need editing. The next version will have everything needed in the config file.
 
 Screenshots: 
 (Sorry, our community is french, so everything is french)
