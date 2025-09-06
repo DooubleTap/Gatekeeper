@@ -1,4 +1,4 @@
-# Whitelister
+# Gatekeeper
 Discord.js 14 bot made to handle whitelisting to a server with a form.
 
 I was using a website like Gather.sh to handle whitelisting of players on my discord server. It was really useful, because we are a strict roleplay server on Fivem and we like to validate players coming in the community with a small resumé of their experience on other servers. Then Gather.sh stopped being supported, was getting ultra laggy and sometimes just broken.. I figured that using a website, for something that could be done directly in discord would be so much better and would reduce the usage of 3rd party software that is often not free. 
