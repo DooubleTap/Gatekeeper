@@ -11,11 +11,11 @@ Here is a guide to install this bot.
 
 1. Download the bot from here.
 2. Go on [https://discord.com/developers/applications](https://discord.com/developers/applications) and setup your bot there.
-3. In your application, go to **Installation**, uncheck `User Install`. In **Default Install Settings**, scopes are `application.commands` and `bot` (Grab the Install Link and paste it in your discord)
-4. In **OAuth2** add this redirect: `http://localhost:8080/callback` and save
+3. In your application, go to **Installation**, uncheck `User Install`. In **Default Install Settings**, scopes are `application.commands` and `bot` (Grab the Install Link and paste it in your discord) <img width="1398" height="810" alt="image" src="https://github.com/user-attachments/assets/2c09b989-db41-487d-a7cc-86df649eae0f" />
+4. In **OAuth2** add this redirect: `http://localhost:8080/callback` and save <img width="1424" height="233" alt="image" src="https://github.com/user-attachments/assets/f4290ef8-f3ed-475b-9382-eb8b6cbf9964" />
 5. In **Bot** make is like this <img width="1407" height="709" alt="image" src="https://github.com/user-attachments/assets/a0ef9767-6368-4be6-b6e7-65d512f76091" />
-7. Then edit the .env file with all the keys and id's required. 
-8. Edit the config.json file. 
+6. Then edit the .env file with all the keys and id's required. 
+7. Edit the config.json file. 
 !! DO NOT COPY PASTE THIS BELOW. JUST EDIT THE FILE ITSELF !!
 ```
 {
@@ -27,9 +27,9 @@ Here is a guide to install this bot.
     "newuser": "", --This is the default role that users receive when they join your guild
 }
 ```
-5. open `/Events/interactions/interactionCreate.js` and Edit everything you want.
-6. open `/SlashCommands/Douanes/setupFormulaire.js` This is where your form button and instruction will be sent. use the command `/setupformulaire` in the channel where you want this to go.
-7. Then, open every file, from top to bottom and adjust this the way you want. Everything is there and commented. There is a few lines where you need to put roles and channels id.
+8. open `/Events/interactions/interactionCreate.js` and Edit everything you want.
+9. open `/SlashCommands/Douanes/setupFormulaire.js` This is where your form button and instruction will be sent. use the command `/setupformulaire` in the channel where you want this to go.
+10. Then, open every file, from top to bottom and adjust this the way you want. Everything is there and commented. There is a few lines where you need to put roles and channels id.
 
 I am working on a new version of this bot to make it less personal. I never planned to share that bot with anyone, this is why a lot of the files need editing. The next version will have everything needed in the config file.
 
