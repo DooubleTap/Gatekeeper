@@ -10,9 +10,12 @@ This bot, can be started from your own pc, or from a windows/linux VPS or Dedi. 
 Here is a guide to install this bot. 
 
 1. Download the bot from here.
-2. Go on [https://discord.com/developers/applications](https://discord.com/developers/applications) and setup your bot there. 
-3. Then edit the .env file with all the keys and id's required. 
-4. Edit the config.json file. 
+2. Go on [https://discord.com/developers/applications](https://discord.com/developers/applications) and setup your bot there.
+3. In your application, go to **Installation**, uncheck `User Install`. In **Default Install Settings**, scopes are `application.commands` and `bot` (Grab the Install Link and paste it in your discord)
+4. In **OAuth2** add this redirect: `http://localhost:8080/callback` and save
+5. In **Bot** make is like this <img width="1407" height="709" alt="image" src="https://github.com/user-attachments/assets/a0ef9767-6368-4be6-b6e7-65d512f76091" />
+7. Then edit the .env file with all the keys and id's required. 
+8. Edit the config.json file. 
 !! DO NOT COPY PASTE THIS BELOW. JUST EDIT THE FILE ITSELF !!
 ```
 {
