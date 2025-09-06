@@ -7,7 +7,7 @@ Ce bot peut être lancé depuis votre propre PC, ou depuis un VPS Windows/Linux 
 
 Voici un guide pour installer ce bot.
 
-Assurez-vous d'abord d'avoir installé ceci sur votre PC ou serveur.
+Assurez-vous d'abord d'avoir installé ceci sur votre PC ou serveur!
 
 ## Prérequis
 
