@@ -47,7 +47,7 @@ Voici le modal que vous voyez lorsque vous rejetez une candidature : <img width=
 
 Voici ce que l’utilisateur reçoit lorsque son formulaire a été rejeté (avec la raison) : <img width="526" height="258" alt="image" src="https://github.com/user-attachments/assets/b871bead-1886-4e85-a63e-4be795f8797f" />
 
-Voici ce que l’utilisateur reçoit lorsque son formulaire est rejeté (modifiable) : <img width="492" height="182" alt="image" src="https://github.com/user-attachments/assets/072ebb60-83ca-42e9-8c0f-12b87ec8e96f" />
+Voici ce que l’utilisateur reçoit lorsque son formulaire est approuvé (modifiable) : <img width="492" height="182" alt="image" src="https://github.com/user-attachments/assets/072ebb60-83ca-42e9-8c0f-12b87ec8e96f" />
 
 Voici ce que l’utilisateur reçoit lorsqu’on lui demande un rendez-vous vocal : <img width="976" height="137" alt="image" src="https://github.com/user-attachments/assets/18732dbb-e1ef-4c6f-9c1f-251ca8b2ca0c" />
 
