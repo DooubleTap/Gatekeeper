@@ -35,7 +35,7 @@ Make sure you have this installed on your pc or server first.
 8. Edit the config.json file. 
 
 Screenshots: 
-(Sorry, our community is french, so everything is french)
+(Sorry, our community is french, so everything is french, but it is easy to just translate the text to your prefered languages. :) )
 
 This screenshot is what the player see before clicking to open the form. <img width="824" height="774" alt="image" src="https://github.com/user-attachments/assets/8795f3fd-8c2c-4047-a6e6-71c49955956f" />
 
