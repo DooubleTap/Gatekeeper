@@ -51,7 +51,7 @@ This is the modal you see when you reject a application: <img width="928" height
 
 This is what the user receives when his form has been rejected (With the reason): <img width="526" height="258" alt="image" src="https://github.com/user-attachments/assets/b871bead-1886-4e85-a63e-4be795f8797f" />
 
-This is what the user receives when his form is rejected (Editable): <img width="492" height="182" alt="image" src="https://github.com/user-attachments/assets/072ebb60-83ca-42e9-8c0f-12b87ec8e96f" />
+This is what the user receives when his form is approved (Editable): <img width="492" height="182" alt="image" src="https://github.com/user-attachments/assets/072ebb60-83ca-42e9-8c0f-12b87ec8e96f" />
 
 This is what the user receives when they are requested for a vocal meeting: <img width="976" height="137" alt="image" src="https://github.com/user-attachments/assets/18732dbb-e1ef-4c6f-9c1f-251ca8b2ca0c" />
 
