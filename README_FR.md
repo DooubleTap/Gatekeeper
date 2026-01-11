@@ -52,3 +52,4 @@ Voici ce que l’utilisateur reçoit lorsque son formulaire est approuvé (modif
 Voici ce que l’utilisateur reçoit lorsqu’on lui demande un rendez-vous vocal : <img width="976" height="137" alt="image" src="https://github.com/user-attachments/assets/18732dbb-e1ef-4c6f-9c1f-251ca8b2ca0c" />
 
 ## Si vous avez besoin d’aide pour la configuration de ce bot, n’hésitez pas à me contacter. Mes informations se trouvent sur ma page profil GitHub.
+ 
